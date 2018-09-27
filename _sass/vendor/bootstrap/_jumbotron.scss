@@ -11,9 +11,10 @@
 
   h1,
   .h1 {
-    color: $jumbotron-heading-color;
+//      color: $jumbotron-heading-color;
+      color: "navy";
   }
-  
+
   p {
     margin-bottom: ($jumbotron-padding / 2);
     font-size: $jumbotron-font-size;
