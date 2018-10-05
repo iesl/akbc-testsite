@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AKBC 2017</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage for the AKBC 2017 Workshop at NIPS">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 0px;
+        }
+        section {
+            /* hack to deal with scroll offsets
+            //padding-top: 60px;
+            //margin-top: -60px; */
+        }
+        .social {
+            font-size: 1px;
+        }
+
+        .paper {
+            display: list-item;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            display:inline-table;
+        }
+
+        .authors {
+        }
+
+        .schedule {
+            width: 100%;
+        }
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-40372412-1', 'akbc.ws');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<!--<body data-spy="scroll" data-target=".navbar">-->
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="brand" href="index.html">AKBC 2017</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <!--li><a href="#intro">Introduction</a></li-->
+                    <li><a href="cfp.html">Call for Papers</a></li>
+                    <!-- <li><a href="#speakers">Speakers</a></li> -->
+                    <!-- <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#papers">Accepted Papers</a></li> -->
+                    <!-- <li><a href="#dates">Dates</a></li> -->
+                    <!--li><a href="#submission">Submission</a></li-->
+                    <!-- <li><a href="#organization">Organization</a></li> -->
+                    <!--li><a href="#submission">Camera-ready Instructions</a></li-->
+                    <!-- <li><a href="#previous">Previous Workshops</a></li> -->
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+
+  <div class="hero-unit">
+      <h1>AKBC 2017</h1>
+
+      <p>6th Workshop on Automated Knowledge Base Construction (AKBC) 2017</p>
+      <p>at
+          <a href="https://nips.cc/Conferences/2017/">NIPS 2017</a> in Long Beach, California, December 8th, 2017.
+      </p>
+  </div>
+
+    <div class="row">
+        <div class="span9">
+            <section id="cfp">
+                <div class="page-header">
+                    <h1>Call for Papers</h1>
+                </div>
+                <p>We welcome papers documenting previously unpublished research; ongoing and exciting preliminary work is perfectly fine. We are particularly interested in visionary paper submissions. We aim for papers that express intriguing and promising ideas &mdash; focusing less on where science is today and more on where it should go tomorrow. </p>
+
+                <p>Topics of interest include, but are not limited to:
+                <ul>
+                <li> machine learning on text; unsupervised, lightly-supervised and distantly-supervised learning; learning from naturally-available data
+                <li> deep learning for representing knowledge bases
+                <li> human-computer collaboration in knowledge base construction; automated population of wikis
+                <li> inference for graphical models and structured prediction; scalable approximate inference
+                <li> information extraction; open information extraction, named entity extraction; ontology construction
+                <li> entity resolution, relation extraction, information integration; schema alignment; ontology alignment; monolingual alignment, alignment between knowledge bases and text
+                <li> pattern analysis, semantic analysis of natural language, reading the web, learning by reading
+                <li> databases; distributed information systems; probabilistic databases
+                <li> scalable computation; distributed computation
+                <li> question-answering using KBs, queries on mixtures of structured and unstructured data; querying under uncertainty
+                <li> dynamic data, online/on-the-fly adaptation of knowledge
+                <li> languages, toolkits and systems for automated knowledge base construction
+                <li> demonstrations of existing automatically-built knowledge base
+                </ul>
+                </p>
+            <p>
+            In addition, for the first time, AKBC will address a longstanding issue in the AKBC, that of equitable comparison and evaluation across methods. We encourage people to use the KBP Online platform (<a href="https://kbpo.stanford.edu/">https://kbpo.stanford.edu/</a>), a new effort to standardize KB population/construction evaluation, for their system evaluation for paper submissions. The platform automates the annotation of kb output and is made available for free for AKBC participants. For further details or questions, visit <a href="https://kbpo.stanford.edu/">https://kbpo.stanford.edu/</a> or email <a href="mailto:chaganty@stanford.edu">chaganty@stanford.edu</a>. </p>
+            <br>
+          </section>
+          <section id="talks">
+              <h2>Invited Talks</h2>
+              <ul>
+              <li> Xin Luna Dong		(Amazon)
+              <li> Tom Mitchell		(Carnegie Mellon University)
+              <li> Maximilian Nickel	(Facebook AI Research)
+              <li> Sebastian Riedel	(Bloomsbury AI / University College London)
+              <li> Sameer Singh		(University of California, Irvine)
+              <li> Ivan Titov		(University of Edinburgh)
+              <li> Luke Zettlemoyer	(University of Washington / Allen Institute for Artificial Intelligence)
+              </ul>
+              </p>
+              <br>
+          </section>
+
+            <section id="submission">
+                <h2>Submission</h2>
+                <p> Please format your papers using the standard NIPS 2017 style files, and restrict them to 5 pages (excluding references). Since the reviewing will not be double-blind, include author information and the \nipsfinalcopy flag. Note that you don't have to include a separate Abstract section in the submission. All accepted papers will be presented as posters, with exceptional submissions also presented as oral talks.
+                <ul>
+                <li> Style files: <a href="https://nips.cc/Conferences/2017/PaperInformation/StyleFiles">https://nips.cc/Conferences/2017/PaperInformation/StyleFiles</a>
+                <li> Submission site: <a href="https://easychair.org/conferences/?conf=akbc2017">https://easychair.org/conferences/?conf=akbc2017</a>
+                </ul>
+                </p>
+                <br>
+            </section>
+
+            <section id="travel_award">
+                <h2>Student Travel Award</h2>
+                <p> We are happy to announce that this year we are able to award free workshop registration to exceptional student applicants. Please send your CV and a short cover letter explaining why you need the travel award, your research interests and how it fits to AKBC to <a href="mailto:info@akbc.ws">info@akbc.ws</a>. </p>
+                <br>
+            </section>
+
+            <section id="dates">
+                <h2>Important Dates</h2>
+                <p>
+                <ul>
+                <li> Submission Due: October 21, 2017
+                <li> Student Travel Award Application Due: October 22, 2017
+                <li> Notification: November 5, 2017
+                <li> Camera-ready Due: November 12, 2017
+                <li> Workshop: December 8,  2017
+                </ul>
+                Deadlines are at 11:59pm PDT and subject to change.
+                </p>
+                <br>
+            </section>
+
+            <section id="organization">
+                <h2>Organizers</h2>
+                <ul>
+                  <li><a href="https://www.jaypujara.org/">Jay Pujara</a>, Information Sciences Institute, USA </li>
+                  <li><a href="http://cs.stanford.edu/~danqi/">Danqi Chen</a>, Stanford University, USA </li>
+                  <li><a href="http://allenai.org/team/bhavanad/">Bhavana Dalvi</a>, Allen Institute for Artificial Intelligence, USA </li>
+                  <li><a href="http://rockt.github.com">Tim Rocktäschel</a>, University of Oxford, UK</li>
+                </ul>
+                For any questions, please e-mail <a href="mailto:info@akbc.ws">info@akbc.ws</a>.
+            </section>
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; AKBC Organizers 2017</p>
+    </footer>
+
+</div>
+<!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    //this is needed to offset the scrollspy functionality,
+    //see http://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap
+    var offset = 60;
+
+    $(function() {
+        $('.navbar li a').click(function(event) {
+            var a = $(this)
+            var view = $(a.attr('href'))[0]
+            if (view) {
+                event.preventDefault();
+                view.scrollIntoView();
+                scrollBy(0, -offset);
+            }
+            $('.navbar li').removeClass("active")
+            a.parent().addClass("active")
+        });
+
+    })
+
+
+</script>
+
+
+
+
+</body>
+</html>

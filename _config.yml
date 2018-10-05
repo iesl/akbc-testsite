@@ -13,7 +13,7 @@ exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 title: "AKBC 2019"
 email: "info@akbc.ws"
 description: "1st Conference on Automated Knowledge Base Construction"
-baseurl: "/akbc-testsite"
+baseurl: "/2019"
 url: "https://gdg-x.github.io"
 permalink: "/blog/:title"
 googleAnalyticsTrackingId: "UA-43643469-5"
@@ -62,7 +62,7 @@ navigationLinks:
 #   - {link: "https://bit.ly/dfua-c4p", text: "Become a speaker"}
 
 # Hero Block
-heroImage: "campus3.jpg"
+heroImage: "amherst.jpg"
 heroTitle: "AKBC 2019"
 eventDate: "May 20 - 22, 2019"
 # typeoutTextValues: '"", "Season", "Ukraine", "Germany", "USA"'
@@ -203,7 +203,7 @@ footerBlocks:
 # Blog
 blogTitle: "Latest news"
 blogCommentsEnabled: true
-discusShortName: "akbc-ws-test"
+discusShortName: "akbc-ws"
 
 # Speakers List Block
 # showSessions: true

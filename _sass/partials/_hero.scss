@@ -12,8 +12,13 @@
             margin: 0;
             padding: 0;
         }
-        p {
+        h1 {
             font-size: $base-font-size * 4;
+            font-weight: $regular;
+            margin-bottom: 35px;
+        }
+        p {
+            font-size: $base-font-size * 3;
             font-weight: $regular;
             margin-bottom: 15px;
         }
@@ -70,10 +75,4 @@
         opacity: 0;
         transform: translateY(-16px);
     }
-}
-
-.logo-jumbotron {
-    width: 250px;
-    height: 60px;
-    transform: scale(3);
 }

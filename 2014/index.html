@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AKBC 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage for the AKBC 2014 Workshop at CIKM">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 0px;
+        }
+        section {
+            /* hack to deal with scroll offsets
+            //padding-top: 60px;
+            //margin-top: -60px; */
+        }
+        .social {
+            font-size: 1px;
+        }
+
+        .paper {
+            display: list-item;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            display:inline-table;
+        }
+
+        .authors {
+        }
+
+        .schedule {
+            width: 100%;
+        }
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-40372412-1', 'akbc.ws');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<!--<body data-spy="scroll" data-target=".navbar">-->
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="brand" href="#">AKBC 2014</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--li><a href="#intro">Introduction</a></li-->
+                    <li><a href="#speakers">Speakers</a></li>
+                    <!--li><a href="#dates">Dates</a></li-->
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#accepted">Papers</a></li>
+                    <!--li><a href="#submission">Submission</a></li-->
+                    <li><a href="#organization">Organization</a></li>
+                    <li><a href="#submission">Camera-ready Instructions</a></li>
+                    <li><a href="#previous">Previous Workshops</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+        <h1>AKBC 2014</h1>
+
+        <p>4th Workshop on Automated Knowledge Base Construction (AKBC) 2014</p>
+        <p>at
+            <a href="http://www.nips.cc/">NIPS 2014</a> in Montreal, Canada, December 13, 2014.
+        </p>
+
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <div class="social">
+
+            <span class="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.akbc.ws" data-via="sameer_" data-related="riedelcastro" data-hashtags="AKBC2014">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </span>
+
+            <!-- Place this tag where you want the +1 button to render. -->
+            <span class="google"><div class="g-plusone" data-size="medium"></div></span>
+
+            <!-- Place this tag after the last +1 button tag. -->
+            <span class="facebook">
+            <div class="fb-like" data-href="http://www.akbc.ws" data-send="false" data-layout="button_count"
+                 data-width="450" data-show-faces="true" style="line-height: 0px;" data-share="true"></div>
+                </span>
+        </div>
+        <p align=right>Supported by <A HREF="http://research.google.com/"><IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" hspace="10" width=150></A></p>
+        
+            <!--p><a href="#submission" class="btn btn-primary">Submit &raquo;</a></p-->
+    </div>
+
+    <!-- Example row of columns -->
+
+    <div class="row">
+        <div class="span9">
+            <section id="intro">
+                <!--div class="page-header">
+                    <h1>Introduction</h1>
+                </div-->
+
+
+                <p>Extracting knowledge from Web pages, and integrating it into a coherent knowledge base (KB) is a task that spans the areas of natural language processing, information extraction, information integration, databases, search, and machine learning. Recent years have seen significant advances here, both in academia and in the industry. Most prominently, all major search engine providers (Yahoo!, Microsoft Bing, and Google) nowadays experiment with semantic KBs. Our workshop serves as a forum for researchers on knowledge base construction in both academia and industry.</p>
+
+                <p>Unlike many other workshops, our workshop puts less emphasis on conventional paper submissions and presentations, but more on visionary papers and discussions. In addition, one of its unique characteristics is that it is centered on keynotes by high-profile speakers. AKBC 2010, AKBC 2012, and AKBC 2013 each had a dozen invited talks from leaders in this area from academia, industry, and government agencies. We had senior invited speakers from Google, Microsoft, Yahoo, several leading universities (MIT, University of Washington, CMU, University of Massachusetts, and more), and DARPA. With this year’s proposal, we would like to resume this positive experience. By inviting established researchers for keynotes, and by focusing particularly on vision paper submissions, we aim to provide a vivid forum of discussion about the field of automated knowledge base construction. </p>
+
+                <p>Topics of interest:
+                <ul>
+                <li> machine learning on text; unsupervised, lightly-supervised and distantly-supervised learning; learning from naturally-available data.
+                <li> human-computer collaboration in knowledge base construction; automated population of wikis.
+                <li> inference for graphical models and structured prediction; scalable approximate inference.
+                <li> information extraction; open information extraction, named entity extraction; ontology construction; 
+                <li> entity resolution, relation extraction, information integration; schema alignment; ontology alignment; monolingual alignment, alignment between knowledge bases and text;
+                <li> pattern analysis, semantic analysis of natural language, reading the web, learning by reading
+                <li> databases; distributed information systems; probabilistic databases;
+                <li> scalable computation; distributed computation.
+                <li> queries on mixtures of structured and unstructured data; querying under uncertainty;
+                <li> dynamic data, online/on-the-fly adaptation of knowledge.
+                <li> languages, toolkits and systems for automated knowledge base construction.
+                <li> demonstrations of existing automatically-built knowledge bases.
+                </ul>
+                </p>
+
+                <p>With this year’s workshop, we would like to resume the positive experiences from two previous
+                    workshops: <a href="http://akbc.xrce.xerox.com/spip.php?rubrique1&lang=en">AKBC-2010</a>, <a
+                            href="http://akbcwekex2012.wordpress.com/">AKBC-WEKEX-2012</a>, and <a
+                            href="http://akbc.ws/2013">AKBC 2013</a>. The AKBC-2014 workshop will
+                    serve as a forum for
+                    researchers working in the area of automated knowledge harvesting from text. By having invited talks
+                    by leading researchers from industry, academia, and the government, and by focusing particularly on
+                    vision papers, we aim to provide a vivid forum of discussion about the field of automated knowledge
+                    base construction. </p>
+
+
+            </section>
+            <section id="speakers">
+                <div class="page-header">
+                    <h1>Invited Speakers</h1>
+                </div>
+                <table class="table table-hover">
+                    <tr>
+                    <td><a href="http://www.cs.cmu.edu/~tom/">Tom Mitchell</a></td>
+                    <td>Carnegie Mellon University, USA</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://people.cs.umass.edu/~mccallum/">Andrew McCallum</a></td>
+                    <td>University of Massachusetts, Amherst, USA</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.cs.stanford.edu/~chrismre">Chris Re</a></td>
+                    <td>Stanford University</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://oren-etzioni.people.allenai.org/">Oren Etzioni</a></td>
+                    <td>CEO, Allen Institute for Artificial Intelligence</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.guha.com/cv.html">Ramanathan Guha</a></td>
+                    <td>Google</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                    <td><a href="http://www.cs.cmu.edu/~./wcohen/">William Cohen</a></td>
+                    <td>Carnegie Mellon University, USA</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://research.microsoft.com/en-us/um/people/hoifung/">Hoifung Poon</a></td>
+                    <td>Microsoft Research</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.thespermwhale.com/jaseweston/">Jason Weston</a></td>
+                    <td>Facebook Research</td>
+                    </tr>
+                    <td><a href="http://www.darpa.mil/Our_Work/I2O/Personnel/Dr_Boyan_Onyshkevych.aspx">Boyan Onyshkevych</a></td>
+                    <td>DARPA</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://research.google.com/pubs/KevinMurphy.html">Kevin Murphy</a></td>
+                    <td>Google Research</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!--section id="dates">
+                <div class="page-header">
+                    <h1>Dates</h1>
+                </div>
+                <div class="alert alert-warn" role="alert">AKBC submission deadline has been extended to October 24, 2014</div>
+                <dl class="dl-horizontal">
+                        <dt class="muted">Submission Due</dt> <dd class="muted"><strike>October 17, 2014</strike> October 24, 2014</dd>
+                        <dt class="muted">Decision Notification</dt><dd class="muted"><strike>November 3, 2014</strike> November 12, 2014</dd>
+                        <dt class="text-info">Camera-ready Due</dt><dd>November 28, 2014</dd>
+                        <dt class="muted">Workshop</dt><dd class="muted">December 13, 2014</dd>
+                </dl>
+                <p><small>Deadlines are at <a href="http://www.worldtimebuddy.com/?qm=1&lid=2643743,5809844,1277333&h=2643743&date=2014-10-11&sln=7-8">11:59pm PDT</a>.</small></p>
+                <p> <a class="btn btn-primary" href="http://www.google.com/calendar/render?cid=https%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2F89vttmib4nqa0rkr0trjd6a8ic%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank">Google Calendar</a>
+                </p>
+            </section-->
+
+            <section id="schedule">
+                <div class="page-header">
+                    <h1>Schedule</h1>
+                </div>
+                <h4>Saturday, December 13th, 2014</h4>
+                <table class="schedule table">
+                    <thead>
+                        <tr>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th>Speaker</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30</td>
+                            <td>8:45</td>
+                            <td>Fabian Suchanek</td>
+                            <td>Welcome Message (<a href="http://suchanek.name/work/publications/akbc2014intro/">slides</a>)</td>
+                        </tr>
+                        <tr>
+                            <td>8:45</td>
+                            <td>9:15</td>
+                            <td><b>Tom Mitchell</b></td>
+                            <td></td>
+                            <td>[<A href="https://www.youtube.com/watch?v=PF6ViL5pcGs">Video</A>]</td>
+                            <td>
+                                <!--button type="button" class="btn" data-toggle="collapse" data-target="#evgeniy_abs">
+                                    Abstract
+                                </button>
+                                <div id="evgeniy_abs" class="collapse">Recent years have witnessed a proliferation of large-scale knowledge bases, including Wikipedia, Freebase, YAGO, Microsoft's Satori, and Google's Knowledge Graph. To increase the scale even further, we need to use automatic methods for knowledge base construction. Previous approaches have primarily focused on text-based extraction, which can be very noisy. In this talk, we will introduce Knowledge Vault, a Web-scale probabilistic knowledge base that combines text-based extractions with prior knowledge, derived from existing knowledge repositories. We employ supervised machine learning methods for fusing these distinct information sources. The Knowledge Vault is substantially bigger than any previously published structured knowledge repository, and features a probabilistic inference system that computes calibrated probabilities of fact correctness. In the second part of the talk, we will discuss the frontiers of research in knowledge discovery on the Web.</div-->
+                            </td>
+                        </tr>
+                        <tr>
+                        <tr>
+                            <td>9:15</td>
+                            <td>9:45</td>
+                            <td><b>Andrew McCallum</b></td>
+                            <td><b>Representation & Reasoning with Universal Schema & Embedded Representations</b></td>
+                            <td>[<A href="https://www.youtube.com/watch?v=Xm1XGjc9lDc">Video</A>]</td>
+                        </tr>
+                            <td>9:45</td>
+                            <td>10:00</td>
+                            <td>Peter Clark</td>
+                            <td>Contributed Talk: Automatic Construction of Inference-Supporting Knowledge Bases</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=eyjpLPjhSPU">Video</A>]</td>
+                        </tr>
+                        <tr class="info">
+                            <td>10:00</td>
+                            <td>11:00</td>
+                            <td></td>
+                            <td>Poster Session + Break</td>
+                        </tr>
+                        <tr>
+                            <td>11:00</td>
+                            <td>11:30</td>
+                            <td><b>Chris Re</b></td>
+                            <td></td>
+                            <td>[<A href="https://www.youtube.com/watch?v=j1k9lDYCQbA">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>11:30</td>
+                            <td>11:45</td>
+                            <td>Arvind Neelakantan</td>
+                            <td>Contributed Talk: Knowledge Base Completion using Compositional Vector Space Models</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=mSrkzc0Nksg">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>11:45</td>
+                            <td>12:00</td>
+                            <td>Ari Kobren</td>
+                            <td>Contributed Talk: Domain Specific Knowledge Base Construction via Crowdsourcing</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=6NJWDHcD8sY">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>12:30</td>
+                            <td><b>Oren Etzioni</b></td>
+                            <td><b>The View from AI2</b> (<a href="slides/etzioni-nips-akbc.pdf">Slides</a>)</td>
+                        </tr>
+                        <tr class="info">
+                            <td>12:30</td>
+                            <td>2:30</td>
+                            <td></td>
+                            <td>Lunch + Poster Session</td>
+                        </tr>
+                        <tr>
+                            <td>2:30</td>
+                            <td>3:00</td>
+                            <td><b>Ramanathan Guha</b></td>
+                            <td>Schema.org</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=-UljtBjV8jM">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>3:00</td>
+                            <td>3:30</td>
+                            <td><b>William Cohen</b></td>
+                            <td><b>Scalable Joint Inference and Reasoning in Automatic KB Construction</b> (<a href="slides/cohen-nips-akbc.pdf">Slides</a>)</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=--pYaISROqE">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>3:30</td>
+                            <td>4:00</td>
+                            <td><b>Hoifung Poon</b></td>
+                            <td><b>Machine Reading for Cancer Panomics</b> (<a href="slides/poon-nips-akbc.pdf">Slides</a>)</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=SM8mM0QAOHc">Video</A>]</td>
+                        </tr>
+                        <tr class="info">
+                            <td>4:00</td>
+                            <td>5:00</td>
+                            <td></td>
+                            <td>Poster Session + Break</td>
+                        </tr>
+                        <tr>
+                            <td>5:00</td>
+                            <td>5:30</td>
+                            <td><b>Jason Weston</b></td>
+                            <td><b>Embeddings for KB and text representation, extraction and question answering</b> (<a href="slides/weston-nips-akbc.pdf">Slides</a>)</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=YkVvOBylV5k">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>5:30</td>
+                            <td>6:00</td>
+                            <td><b>Boyan Onyshkevych</b></td>
+                            <td><b>KB Representation of Text, Audio, Images, and Video</b> (<a href="slides/onyshkevych-nips-akbc.pdf">Slides</a>)</td>
+                            <td>[<A href="https://www.youtube.com/watch?v=DA438Jyp_wA">Video</A>]</td>
+                        </tr>
+                        <tr>
+                            <td>6:00</td>
+                            <td>6:30</td>
+                            <td><b>Kevin Murphy</b></td>
+                            <td></td>
+                            <td>[<A href="https://www.youtube.com/watch?v=i2r5J4XAhsw">Video</A>]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="accepted">
+                <div class="page-header">
+                    <h1>Accepted Papers</h1>
+                </div>
+                <h3>Contributed Talks</h3>
+
+<div class="paper"><span class="authors"><span><a href="http://people.cs.umass.edu/~arvind/">Arvind Neelakantan</a>, Benjamin Roth and <a href="http://www.cs.umass.edu/~mccallum">Andrew Mccallum</a></span>. </span><span class="title">Knowledge Base Completion using Compositional Vector Space Models</span> <a href="submissions/akbc2014_submission_10.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://www.allenai.org">Peter Clark</a>, Niranjan Balasubramanian, Sumithra Bhakthavatsalam, Kevin
+Humphreys, Jesse Kinkead, Ashish Sabharwal, and Oyvind Tafjord</span>. </span><span class="title">Automatic Construction of Inference-Supporting Knowledge Bases</span> <a href="submissions/akbc2014_submission_32.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://people.cs.umass.edu/~akobren/">Ari Kobren</a>, Thomas Logan, Siddarth Sampangi and Andrew McCallum</span>. </span><span class="title">Domain Specific Knowledge Base Construction via Crowdsourcing</span> <a href="submissions/akbc2014_submission_30.pdf">PDF</a></div>
+
+                <h3>Posters</h3>
+
+<div class="paper"><span class="authors"><span>Adrian Benton, Jay Deyoung, Adam Teichert, Mark Dredze, Benjamin Van Durme, Stephen Mayhew and Max Thomas</span>. </span><span class="title">Faster (and Better) Entity Linking with Cascades</span> <a href="submissions/akbc2014_submission_1.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Ning Gao, Douglas Oard and <a href="http://www.dredze.com">Mark Dredze</a></span>. </span><span class="title">A Test Collection for Email Entity Linking</span>
+ <a href="submissions/akbc2014_submission_4.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Derry Tanti Wijaya, Ndapandula Nakashole and Tom Mitchell</span>. </span><span class="title">Mining and Organizing a Resource of State-changing Verbs</span> <a href="submissions/akbc2014_submission_5.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Jakob Huber, Christian Meilicke and Heiner Stuckenschmidt</span>. </span><span class="title">Applying Markov Logic for Debugging Probabilistic Temporal Knowledge Bases</span> <a href="submissions/akbc2014_submission_6.pdf">PDF</a></div>
+<div class="paper"><span class="authors">Ramanathan Guha. </span><span class="title">Correlating Entities</span> <a href="submissions/akbc2014_submission_7.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Tomasz Tylenda, <a href="http://people.mpi-inf.mpg.de/~skondred">Sarath Kumar Kondreddi</a> and Gerhard Weikum</span>. </span><span class="title">Spotting Knowledge Base Facts in Web Texts</span> <a href="submissions/akbc2014_submission_8.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://www.cs.cmu.edu/~bbd/">Bhavana Dalvi</a> and <a href="http://www.cs.cmu.edu/~wcohen/">William Cohen</a></span>. </span><span class="title">Multi-view Exploratory Learning for AKBC Problems</span> <a href="submissions/akbc2014_submission_11.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Alexander G. Ororbia Ii, Jian Wu and C. Lee Giles</span>. </span><span class="title">CiteSeerX:  Intelligent Information Extraction and Knowledge Creation from Web-Based Data</span> <a href="submissions/akbc2014_submission_12.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://www.mpi-inf.mpg.de/~agrycner/">Adam Grycner</a>, <a href="http://www.mpi-inf.mpg.de/~weikum/">Gerhard Weikum</a>, <a href="http://www.cs.umd.edu/~jay/">Jay Pujara</a>, <a href="http://www.ics.uci.edu/~jfoulds/">James Foulds</a> and <a href="http://www.umiacs.umd.edu/~getoor/">Lise Getoor</a></span>. </span><span class="title">A Unified Probabilistic Approach for Semantic Clustering of Relational Phrases</span> <a href="submissions/akbc2014_submission_13.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Ndapandula Nakashole and Tom M. Mitchell</span>. </span><span class="title">Micro Reading with Priors: Towards Second Generation Machine Readers</span> <a href="submissions/akbc2014_submission_14.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><a href="http://www.di.ens.fr/~grave/">Edouard Grave</a>. </span><span class="title">Weakly supervised named entity classification</span> <a href="submissions/akbc2014_submission_15.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Lucas Sterckx, Thomas Demeester, Johannes Deleu and <a href="http://users.atlantis.ugent.be/cdvelder/">Chris Develder</a></span>. </span><span class="title">Using Semantic Clustering and Active Learning for Noise Reduction in Distant Supervision</span> <a href="submissions/akbc2014_submission_16.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Francis Ferraro, Max Thomas, Matthew Gormley, Travis Wolfe, Craig Harman and Benjamin Van Durme</span>. </span><span class="title">Concretely Annotated Corpora</span> <a href="submissions/akbc2014_submission_18.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://luisgalarraga.de">Luis Galárraga</a> and <a href="http://suchanek.name">Fabian M. Suchanek</a></span>. </span><span class="title">Towards a Numerical Rule Mining Language</span> <a href="submissions/akbc2014_submission_21.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://www.cs.cornell.edu/~bishan/">Bishan Yang</a> and <a href="http://www.cs.cornell.edu/home/cardie/">Claire Cardie</a></span>. </span><span class="title">Improving on Recall Errors for Coreference Resolution</span> <a href="submissions/akbc2014_submission_22.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Chandra Sekhar Bhagavatula, Thanapon Noraset and Doug Downey</span>. </span><span class="title">TextJoiner: On-demand Information Extraction with Multi-Pattern Queries</span> <a href="submissions/akbc2014_submission_24.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Benjamin Roth, Emma Strubell, Katherine Silverstein and Andrew Mccallum</span>. </span><span class="title">Minimally Supervised Event Argument Extraction using Universal Schema</span> <a href="submissions/akbc2014_submission_26.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://www.matlog.net/research.php">Mathias Niepert</a> and <a href="http://sameersingh.org">Sameer Singh</a></span>. </span><span class="title">Out of Many, One: Unifying Web-Extracted Knowledge Bases</span> <a href="submissions/akbc2014_submission_28.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span>Laura Dietz, Michael Schuhmacher and Simone Paolo Ponzetto</span>. </span><span class="title">Queripidia: Query-specific Wikipedia Construction</span> <a href="submissions/akbc2014_submission_31.pdf">PDF</a></div>
+<div class="paper"><span class="authors"><span><a href="http://www.cs.umd.edu/~jay">Jay Pujara</a> and <a href="http://www.cs.umd.edu/users/getoor">Lise Getoor</a></span>. </span><span class="title">Building Dynamic Knowledge Graphs</span> <a href="submissions/akbc2014_submission_35.pdf">PDF</a></div>
+            </section>
+            <!--section id="prep">
+                <div class="page-header">
+                    <h1>Preparations</h1>
+                </div>
+                
+                <p> All accepted papers should be presented by at least one author. Every paper should be presented a poster.
+                The poster dimensions are as specified <a href=http://suchanek.name/posters.jpg>here</a>.
+                </p>
+                <p>
+                    In addition, the papers listed under "Talk &amp; posters" should be presented by a short talk.
+                    We allocate 10 minutes per talk, which includes speaker change, the talk itself, and one or two quick questions.
+                    Please see above for the schedule of the talks.
+                    <b>The slides for the talk should be emailed to info@akbc.ws by 9am Pacific on October 27, 2014</b>. We shall use a single 
+                    comuter (Mac) to save time during talk transition. Please name your file XX_YYY.ZZZ, where XX is the two-digit decimal
+                    number of your talk slot (01, 02, ...), YYY is your name, and ZZZ is any of the supported file formats
+                    (PPT, PPTX, PDF, SVG, Keynote).
+                </p>
+            </section-->
+            <section id="submission">
+                <div class="page-header">
+                    <h1>Submission</h1>
+                </div>
+                <p> We welcome ongoing and exciting preliminary work. We are particularly interested in visionary paper
+                    submissions. We aim for papers that express intriguing and promising ideas — focusing less on where
+                    science is today and more on where it should go tomorrow. All accepted papers will be presented as posters, with exceptional submissions also presented as oral talks.</p>
+
+                <!--div class="alert alert-info" role="alert">Submission site coming soon!</div-->
+
+                <p>Please format your papers using the standard <a
+                        href="http://nips.cc/Conferences/2014/PaperInformation/StyleFiles">NIPS Style files</a>, and restrict it
+                    to 4 pages (excluding references). Since the reviewing will not be double blind, please include author information and the <code>\nipsfinalcopy</code> flag. Note that you don't have to include a separate <code>Abstract</code> section in the submission.
+                </p>
+                <!--p>All accepted papers will be presented as posters. 
+                    Additionally, the "talk papers" (as determined by the PC) will also be presented in
+                    an oral session.</p-->
+
+                <h2>Camera-ready Instructions</h1>
+                <p>
+                Please use the above instructions, and the following link, to update your submission for camera-ready. The page limit for the camera-ready has been expanded to 5 pages (+ references). The camera-ready submissions are due by <span  class="text-info">November 28</span>.
+                </p>
+
+                <p><a href="https://easychair.org/conferences/?conf=akbc2014" class="btn btn-primary btn-large">Submit &raquo;</a></p>
+                <p>
+                    Every talk should be accompanied by a poster. The maximal poster width is 1 meter (3 feet), which corresponds to <a href=http://en.wikipedia.org/wiki/ISO_216>A0 in portait orientation</a>.
+                </p>
+            </section>
+            <section id="organization">
+                <div class="page-header">
+                    <h1>Organization</h1>
+                </div>
+
+                <ul>
+                    <li><a href="http://www.riedelcastro.org">Sebastian Riedel</a>, University College London, UK</li>
+                    <li><a href="http://www.sameersingh.org">Sameer Singh</a>, University of Washington, Seattle, USA
+                    </li>
+                    <li><a href="http://suchanek.name">Fabian M. Suchanek</a>, T&eacute;l&eacute;com ParisTech University, France
+                    </li>
+                    <li><a href="http://talukdar.net">Partha Pratim Talukdar</a>, Indian Institute of Science, India</li>
+                </ul>
+                For any questions, please mail <a href="mailto:info@akbc.ws">info@akbc.ws</a>
+                
+                <h2>Program Committee</h2>
+                <ul>
+<li>	Ralf	Schenkel
+<li>	Ndapandula	Nakashole
+<li>	Jayant	Krishnamurthy	
+<li>	Anthony	Platanios
+<li>	Niranjan	Balasubramanian
+<li>    Nicoleta    Preda
+<li>	Alan	Akbik
+<li>	Xiao	Ling
+<li>	Alan	Ritter
+<li>	Gerhard	Weikum
+<li>	Andreas	Vlachos
+<li>	Doug	Downey
+<li>	Tim	Rocktaeschel
+<li>	Arvind	Neelakantan
+<li>	Gabor	Angeli
+<li>	Limin	Yao
+<li>	James	Mayfield
+<li>	Bhavana	Dalvi
+<li>	Michael	Wick
+<li>	Estevam	Hruschka Junior
+<li>	Hoifung	Poon
+<li>	Jason	Naradowsky
+<li>	James	Fan	
+<li>	Alon	Halevy
+<li>    Steffen Staab
+<li>    Ramanathan  Guha
+                </ul>
+
+            </section>
+            <section id="previous">
+                <div class="page-header">
+                    <h1>Previous Workshops</h1>
+                </div>
+
+                <ul>
+                    <li><a href="http://akbc.ws/2013">AKBC 2013</a> at CIKM 2013, San Francisco</li>
+                    <li><a href="http://akbcwekex2012.wordpress.com/">AKBC-WEKEX 2012</a> at NAACL 2012, Montreal</li>
+                    <li><a href="http://akbc.xrce.xerox.com/spip.php?rubrique1&lang=en">AKBC 2010</a> in Grenoble</li>
+                </ul>
+
+            </section>
+        </div>
+        <div class="span3">
+            <a class="twitter-timeline" href="https://twitter.com/search?q=%23AKBC2014%20OR%20akbc.ws" data-widget-id="532959371081154560">Tweets about #AKBC2014 OR akbc.ws</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; AKBC Board 2014</p>
+    </footer>
+
+</div>
+<!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    //this is needed to offset the scrollspy functionality,
+    //see http://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap
+    var offset = 60;
+
+    $(function() {
+        $('.navbar li a').click(function(event) {
+            var a = $(this)
+            var view = $(a.attr('href'))[0]
+            if (view) {
+                event.preventDefault();
+                view.scrollIntoView();
+                scrollBy(0, -offset);
+            }
+            $('.navbar li').removeClass("active")
+            a.parent().addClass("active")
+        });
+
+    })
+
+
+</script>
+
+
+
+
+</body>
+</html>

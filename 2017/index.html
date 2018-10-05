@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AKBC 2017</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage for the AKBC 2017 Workshop at NIPS">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 0px;
+        }
+        section {
+            /* hack to deal with scroll offsets
+            //padding-top: 60px;
+            //margin-top: -60px; */
+        }
+        .social {
+            font-size: 1px;
+        }
+
+        .paper {
+            display: list-item;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            display:inline-table;
+        }
+
+        .emph {
+            color: red;
+            font-weight: bold;
+        }
+
+        .authors {
+        }
+
+        .schedule {
+            width: 100%;
+        }
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-40372412-1', 'akbc.ws');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<!--<body data-spy="scroll" data-target=".navbar">-->
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="brand" href="#">AKBC 2017</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--li><a href="#intro">Introduction</a></li-->
+                    <li><a href="cfp.html">Call for Papers</a></li>
+                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#papers">Accepted Papers</a></li>
+                    <li><a href="#dates">Dates</a></li>
+                    <!--li><a href="#submission">Submission</a></li-->
+                    <li><a href="#organization">Organization</a></li>
+                    <!--li><a href="#submission">Camera-ready Instructions</a></li-->
+                    <li><a href="#previous">Previous Workshops</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Main hero unit for a primary marketing message or call to action -->
+    <div class="hero-unit">
+        <h1>AKBC 2017</h1>
+
+        <p>6th Workshop on Automated Knowledge Base Construction (AKBC) 2017</p>
+        <p>at
+            <a href="https://nips.cc/Conferences/2017/">NIPS 2017</a> in Long Beach, California, December 8th, 2017.
+        </p>
+
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <div class="social">
+
+            <span class="twitter">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.akbc.ws" data-hashtags="AKBC2017">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </span>
+
+            <!-- Place this tag where you want the +1 button to render. -->
+            <span class="google"><div class="g-plusone" data-size="medium"></div></span>
+
+            <!-- Place this tag after the last +1 button tag. -->
+            <span class="facebook">
+            <div class="fb-like" data-href="http://www.akbc.ws" data-send="false" data-layout="button_count"
+                 data-width="450" data-show-faces="true" style="line-height: 0px;" data-share="true"></div>
+                </span>
+        </div>
+        <!--p align=right>Supported by <A HREF="http://research.google.com/"><IMG SRC="http://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" hspace="10" width=150></A></p-->
+
+            <!--p><a href="#submission" class="btn btn-primary">Submit &raquo;</a></p-->
+    </div>
+
+    <!-- Example row of columns -->
+
+    <div class="row">
+        <div class="span9">
+            <section id="intro">
+                <!--div class="page-header">
+                    <h1>Introduction</h1>
+                </div-->
+<!--                 <p>
+                <span class="emph">Please participate in our surveys:</span>
+                <li> <a href="http://bit.ly/akbc16-s1">Survey #1</a> </li>
+                <li> <a href="http://bit.ly/akbc16-s2">Survey #2</a> </li>
+                <li> <a href="http://bit.ly/akbc16-s3">Survey #3</a> </li>
+                <li> <a href="http://bit.ly/akbc16-s4">Survey #4</a> </li>
+                <br>
+                <li> <a href="http://bit.ly/akbc16-s5">AKBC Exit Survey</a> </li>
+                <li> <a href="https://goo.gl/qAoKD3">Panel Questions</a></li>
+                </p> -->
+
+
+                <p>Extracting knowledge from Web pages, and integrating it into a coherent knowledge base (KB) is a task that spans the areas of natural language processing, information extraction, information integration, databases, search, and machine learning. Recent years have seen significant advances here, both in academia and industry. Most prominently, all major search engine providers (Yahoo!, Microsoft Bing, and Google) nowadays experiment with semantic KBs. Our workshop serves as a forum for researchers on knowledge base construction in both academia and industry.</p>
+
+                <p>Unlike many other workshops, our workshop puts less emphasis on conventional paper submissions and presentations, but more on visionary papers and discussions. In addition, one of its unique characteristics is that it is centered on keynotes by high-profile speakers. <a href="http://videolectures.net/akbc2010_grenoble/">AKBC 2010</a>, <a href="https://akbcwekex2012.wordpress.com/">AKBC 2012</a>, <a href="http://www.akbc.ws/2013/">AKBC 2013</a>, <a href="http://www.akbc.ws/2014/">AKBC 2014</a> and <a href="http://www.akbc.ws/2016/">AKBC 2016</a> each had a dozen invited talks from leaders in this area from academia, industry, and government agencies. We had senior invited speakers from Google, Microsoft, Yahoo, several leading universities (MIT, Stanford, University of Washington, CMU, University of Massachusetts, and more), and DARPA. With this year’s workshop, we aim to resume this positive experience. By established researchers for keynotes, and by focusing particularly on vision paper submissions, we aim to provide a vivid forum of discussion about the field of automated knowledge base construction. The AKBC 2017 workshop will serve as a forum for researchers working in the area of automated knowledge harvesting from text. By having invited talks
+        by leading researchers from industry, academia, and the government, and by focusing particularly on vision papers, we aim to provide a vivid forum of discussion about the field of automated knowledge
+        base construction. </p>
+
+                <p> <h3>Topics of interest:</h3>
+                <ul>
+                  <li> machine learning on text; unsupervised, lightly-supervised and distantly-supervised learning; learning from naturally-available data
+                  <li> deep learning for representing knowledge bases
+                  <li> human-computer collaboration in knowledge base construction; automated population of wikis
+                  <li> inference for graphical models and structured prediction; scalable approximate inference
+                  <li> information extraction; open information extraction, named entity extraction; ontology construction
+                  <li> entity resolution, relation extraction, information integration; schema alignment; ontology alignment; monolingual alignment, alignment between knowledge bases and text
+                  <li> pattern analysis, semantic analysis of natural language, reading the web, learning by reading
+                  <li> databases; distributed information systems; probabilistic databases
+                  <li> scalable computation; distributed computation
+                  <li> question-answering using KBs, queries on mixtures of structured and unstructured data; querying under uncertainty
+                  <li> dynamic data, online/on-the-fly adaptation of knowledge
+                  <li> languages, toolkits and systems for automated knowledge base construction
+                  <li> demonstrations of existing automatically-built knowledge base
+                </ul>
+                </p>
+
+                <!-- <p> Our workshop highly values the open exchange of ideas, the freedom of thought and expression, and respectful scientific debate. We support and uphold the <a href="http://naacl.org/policies/anti-harassment.html">NAACL Anti-Harassment policy</a>, and any workshop participant should feel free to contact any of the <a href="http://naacl.org/officers/">NAACL Board members</a> or Priscilla Rasmussen, in case of any issues. </p> -->
+            </section>
+            <section id="cfp">
+                <div class="page-header">
+                    <h1><a href="cfp.html">Call for Papers</a></h1>
+                </div>
+            </section>
+            <section id="speakers">
+                <div class="page-header">
+                    <h1>Invited Speakers</h1>
+                </div>
+                <table class="table table-hover">
+                    <tr>
+                    <td><a href="http://lunadong.com/">Luna Dong</a></td>
+                    <td>Amazon</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.cs.cmu.edu/~tom/">Tom Mitchell</a></td>
+                    <td>Carnegie Mellon University</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.mit.edu/~mnick/">Maximilian Nickel</a></td>
+                    <td>Facebook AI Research</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.riedelcastro.org/">Sebastian Riedel</a></td>
+                    <td>Bloomsbury AI / University College London</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://sameersingh.org/">Sameer Singh</a></td>
+                    <td>University of California, Irvine</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://ivan-titov.org/">Ivan Titov</a></td>
+                    <td>University of Edinburgh</td>
+                    </tr>
+                    <tr>
+                    <td><a href="https://www.cs.washington.edu/people/faculty/lsz">Luke Zettlemoyer</a></td>
+                    <td>University of Washington/Allen Institute for Artificial Intelligence</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="speakers">
+                <div class="page-header">
+                    <h1>Sponsors</h1>
+                </div>
+                <a href="https://research.fb.com/"><img src="fb.png" height="100"></img></a></p>
+				<a href="http://bloomsbury.ai"><img src="bai.png" height="100"></img></a>
+            </section>
+
+    <section id="schedule">
+                <div class="page-header">
+                    <h1>Schedule</h1>
+                </div>
+                <h4>Friday, December 8th, 2017</h4>
+                <table class="schedule table">
+                    <thead>
+                        <tr>
+                            <th>Start</th>
+                            <th>End</th>
+                            <th width="250px">Speaker</th>
+                            <th>Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="warning">
+                            <td>8:50</td>
+                            <td>9:00</td>
+                            <td>AKBC Organizers</td>
+                            <td>Opening Remarks</td>
+                        </tr>
+                        <tr>
+                            <td>9:00</td>
+                            <td>9:30</td>
+                            <td><b>Luna Dong</b></td>
+                            <td><b>Challenges and Innovations in Building a Product Knowledge Graph</b> <a href="slides/luna-dong-slides.pptx">[slides]</a>  <button data-toggle="collapse" data-target="#luna_abstract">Abstract </button>
+                             <div id="luna_abstract" class="collapse">Knowledge graphs have been used to support a wide range of applications and enhance search results for multiple major search engines, such as Google and Bing. At Amazon we are building a Product Graph, an authoritative knowledge graph for all products in the world. The thousands of product verticals we need to model, the vast number of data sources we need to extract knowledge from, the huge volume of new products we need to handle every day, and the various applications in Search, Discovery, Personalization, Voice, that we wish to support, all present big challenges in constructing such a graph.
+
+                              In this talk we describe four scientific directions we are investigating in building and using such a graph, namely, harvesting product knowledge from the web, hands-off-the-wheel knowledge integration and cleaning, human-in-the-loop knowledge learning, and graph mining and graph-enhanced search. This talk will present our progress to achieve near-term goals in each direction, and show the many research opportunities towards our moon-shot goals.
+
+                              <br><br> Bio: Xin Luna Dong is a Principal Scientist at Amazon, leading the efforts of constructing Amazon Product Knowledge Graph. She was one of the major contributors to the Google Knowledge Vault project, and has led the Knowledge-based Trust project, which is called the "Google Truth Machine" by Washington Post. She has got the VLDB Early Career Research Contribution Award for "advancing the state of the art of knowledge fusion". She co-authored book "Big Data Integration", and is the PC co-chair for Sigmod 2018 and WAIM 2015.</div></td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9:30</td>
+                            <td>10:00</td>
+                            <td><b>Luke Zettlemoyer</b></td>
+                            <td><b>End-to-end Learning for Broad Coverage Semantics: SRL, Coreference, and Beyond</b> <a href="slides/luke-zettlemoyer-slides.pdf">[slides]</a> <button data-toggle="collapse" data-target="#luke_abstract">Abstract </button>
+                             <div id="luke_abstract" class="collapse">Deep learning with large supervised training sets has had significant impact on many research challenges, from speech recognition to machine translation. However, applying these ideas to problems in computational semantics has been difficult, at least in part due to modest dataset sizes and relatively complex structured prediction tasks.
+
+                              In this talk, I will present two recent results on end-to-end deep learning for classic challenge problems in computational semantics: semantic role labeling and coreference resolution. In both cases, we will introduce relative simple deep neural network approaches that use no preprocessing (e.g. no POS tagger or syntactic parser) and achieve significant performance gains, including over 20% relative error reductions when compared to non-neural methods. I will also discuss our first steps towards scaling the amount of data such methods can be trained on by many orders of magnitude, including semi-supervised learning via contextual word embeddings and supervised learning through crowdsourcing. Our hope is that these advances, when combined, will enable very high quality semantic analysis in any domain from easily gathered supervision.
+
+                              <br><br> Bio: Luke Zettlemoyer is an Associate Professor in the Paul G. Allen School of Computer Science & Engineering at the University of Washington, and also leads the AllenNLP project at the Allen Institute for Artificial Intelligence. His research focuses on empirical computational semantics, and involves designing machine learning algorithms and building large datasets. Honors include multiple paper awards, a PECASE award, and an Allen Distinguished Investigator Award. Luke received his PhD from MIT and was a postdoc at the University of Edinburgh.</div> </td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>10:30</td>
+                            <td><b>Ivan Titov</b></td>
+                            <td><b>Graph Convolutional Networks for Extracting and Modeling Relational Data</b> <a href="slides/ivan-titov-slides.pdf">[slides]</a> <button data-toggle="collapse" data-target="#ivan_abstract">Abstract </button>
+                             <div id="ivan_abstract" class="collapse">Graph Convolutional Networks (GCNs) is an effective tool for modeling graph structured data. We investigate their applicability in the context of both extracting semantic relations from text (specifically, semantic role labeling) and modeling relational data (link prediction). For semantic role labeling, we introduce a version of GCNs suited to modeling syntactic dependency graphs and use them as sentence encoders. Relying on these linguistically-informed encoders, we achieve the best reported scores on standard benchmarks for Chinese and English. For link prediction, we propose Relational GCNs (RGCNs), GCNs developed specifically to deal with highly multi-relational data, characteristic of realistic knowledge
+                            bases. By explicitly modeling neighbourhoods of entities, RGCNs accumulate evidence over multiple inference steps in relational graphs and yield competitive results on standard link prediction benchmarks.
+
+                             Joint work with Diego Marcheggiani, Michael Schlichtkrull, Thomas Kipf, Max Welling, Rianna van den Berg and Peter Bloem.
+
+                              <br><br> Bio: Ivan Titov is an Associate Professor at the University of Edinburgh and the University of Amsterdam. His research interests are in statistical natural language processing and machine learning. He serves as an action editor for TACL, JMLR as well as on the JAIR editorial board and the advisory board of the European chapter of Association for Computational Linguistics.  He holds an ERC starting grant in the area of natural language processing.</div>
+                            </td>
+                        </tr>
+                        <tr class="info">
+                            <td>10:30</td>
+                            <td>11:30</td>
+                            <td></td>
+                            <td>Morning Poster Session (<b>Posters 1-11!</b>) and Coffee Break</td>
+                        </tr>
+                        <tr>
+                            <td>11:30</td>
+                            <td>12:00</td>
+                            <td><b>Maximilian Nickel</b></td>
+                            <td><b>Learning Hierarchical Representations of Relational Data</b> <button data-toggle="collapse" data-target="#max_abstract">Abstract </button>
+                             <div id="max_abstract" class="collapse">Representation learning has become an invaluable approach for
+                              making statistical inferences from relational data. However, while
+                              complex relational datasets often exhibit a latent hierarchical structure,
+                              state-of-the-art embedding methods typically do not account for this property. In this talk, I will introduce a novel approach to learning such hierarchical representations of symbolic data by embedding them into
+                              hyperbolic space -- or more precisely into an n-dimensional Poincaré ball.
+                              I will discuss how the underlying hyperbolic geometry allows us to learn
+                              parsimonious representations which simultaneously capture hierarchy and
+                              similarity. Furthermore, I will show that Poincaré embeddings can
+                              outperform Euclidean embeddings significantly on data with latent
+                              hierarchies, both in terms of representation capacity and in terms of
+                              generalization ability.
+
+                              <br><br> Bio: Maximilian Nickel is a research scientist at Facebook AI Research in New York. Before joining FAIR, he was a postdoctoral fellow at MIT where he was with the Laboratory for Computational and Statistical Learning and the Center for Brains, Minds and Machines. In 2013, he received his PhD with summa cum laude from the Ludwig Maximilian University Munich. From 2010 to 2013 he worked as a research assistant at Siemens Corporate Technology. His research centers around geometric methods for learning and reasoning with relational knowledge representations and their applications in artificial intelligence, machine reading, and question answering.</div> </td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>12:30</td>
+                            <td><b>Sebastian Riedel</b></td>
+                            <td><b>Reading and Reasoning with Neural Program Interpreters</b>  <a href="slides/sebastian-riedel-slides.pdf">[slides]</a> <button data-toggle="collapse" data-target="#sebastian_abstract">Abstract </button>
+                             <div id="sebastian_abstract" class="collapse">We are getting better at teaching end-to-end neural models how to answer questions about content in natural language text. However, progress has been mostly restricted to extracting answers that are directly stated in text. In this talk, I will present our work towards teaching machines not only to read, but also to reason with what was read and to do this in a interpretable and controlled fashion. Our main hypothesis is that this can be achieved by the development of neural abstract machines that follow the blueprint of program interpreters for real-world programming languages. We test this idea using two languages: an imperative (Forth) and a declarative (Prolog/Datalog) one. In both cases we implement differentiable interpreters that can be used for learning reasoning patterns. Crucially, because they are based on interpretable host languages, the interpreters also allow users to easily inject prior knowledge and inspect the learnt patterns. Moreover, on tasks such as math word problems and relational reasoning our approach compares favourably to state-of-the-art methods.
+
+                              <br><br> Bio: Sebastian Riedel is a reader in Natural Language Processing and Machine Learning at the University College London (UCL), where he is leading the Machine Reading lab.  He is also the head of research at Bloomsbury AI and an Allen Distinguished Investigator. He works in the intersection of Natural Language Processing and Machine Learning, and focuses on teaching machines how to read and reason. He was educated in Hamburg-Harburg (Dipl. Ing) and Edinburgh (MSc., PhD), and worked at the University of Massachusetts Amherst and Tokyo University before joining UCL. </div></td>
+                        </tr>
+                        <tr class="info">
+                            <td>12:30</td>
+                            <td>2:00</td>
+                            <td></td>
+                            <td>Lunch Break</td>
+                        </tr>
+                        <tr>
+                            <td>2:00</td>
+                            <td>2:30</td>
+                            <td><b>Sameer Singh</b></td>
+                            <td><b>Multimodal KB Extraction and Completion</b> <a href="slides/sameer-singh-slides.pdf">[slides]</a> <button data-toggle="collapse" data-target="#sameer_abstract">Abstract </button>
+                             <div id="sameer_abstract" class="collapse">Existing pipelines for constructing KBs primarily support a restricted set of
+                            data types, such as focusing on the text of the documents when extracting information, ignoring the various modalities of evidence that we regularly encounter, such as images, semi-structured tables, video, and audio. Similarly, approaches that reason over incomplete and uncertain KBs are limited to basic entity-relation graphs, ignoring the diversity of data types that are useful for relational reasoning, such as text, images, and numerical attributes. In this work, we present a novel AKBC pipeline that takes the first steps in combining textual and relational evidence with other sources like numerical, image, and tabular data. We focus on two tasks: single entity attribute extraction from documents and relational knowledge graph completion. For each, we introduce new datasets that contain multimodal information, propose benchmark evaluations, and develop models that build upon advances in deep neural encoders for different data types.
+
+                              <br><br> Bio: Dr. Sameer Singh is an Assistant Professor of Computer Science at the University of California, Irvine. He is working on large-scale and interpretable machine learning applied to information extraction and natural language processing. Before UCI, Sameer was a Postdoctoral Research Associate at the University of Washington. He received his PhD from the University of Massachusetts, Amherst in 2014, during which he also interned at Microsoft Research, Google Research, and Yahoo! Labs.  </div>
+                            </td>
+                        </tr>
+		                <tr>
+		                            <td>2:30</td>
+		                            <td>2:30</td>
+					    <td></td>
+		                            <td><b>Best Paper Award</b></td>
+		                        </tr>
+                        <tr>
+                            <td>2:30</td>
+                            <td>2:45</td>
+			    <td></td>
+                            <td><b>Contributed Talk</b>: Go for a Walk and Arrive at the Answer: Reasoning Over Knowledge Bases with Reinforcement Learning</td>
+                        </tr>
+                        <tr>
+                            <td>2:45</td>
+                            <td>3:00</td>
+			    <td></td>
+                            <td><b>Contributed Talk</b>: Multi-graph Affinity Embeddings for Multilingual Knowledge Graphs  </td>
+                        </tr>
+                        <tr>
+                            <td>3:00</td>
+                            <td>3:15</td>
+			    <td></td>
+                            <td><b>Contributed Talk</b>: A Study of Automatically Acquiring Explanatory Inference Patterns from Corpora of Explanations: Lessons from Elementary Science Exams </td>
+                        </tr>
+                        <tr>
+                            <td>3:15</td>
+                            <td>3:45</td>
+                            <td><b>Tom Mitchell</b></td>
+                            <td><b>NELL: Lessons and Future Directions</b> <a href="slides/tom-mitchell-slides.pdf">[slides]</a> <button data-toggle="collapse" data-target="#tom_abstract">Abstract </button>
+                             <div id="tom_abstract" class="collapse">The Never Ending Language Learner (NELL) research project has produced a computer program that has been running continuously since January 2010, learning to build a large knowledge base by extracting structured beliefs (e.g., PersonFoundedCompany(Gates,Microsoft),  BeverageServedWithBakedGood(tea,crumpets)) from unstructured text on the web. This talk will provide an update on new NELL research results, reflect on the lessons learned from this effort, and discuss specific challenges for future systems that attempt to build large knowledge bases automatically.
+
+                              <br><br> Bio: Tom M. Mitchell is the E. Fredkin University Professor at Carnegie Mellon University, where he founded the world's first Machine Learning Department.   His research uses machine learning to develop computers that are learning to read the web, and uses brain imaging to study how the human brain understands what it reads.  Mitchell is a member of the U.S. National Academy of Engineering, of the American Academy of Arts and Sciences, and a Fellow and Past President of the Association for the Advancement of Artificial Intelligence (AAAI).    </div>
+                            </td>
+                        </tr>
+                        <tr class="info">
+                            <td>3:45</td>
+                            <td>4:45</td>
+                            <td></td>
+                            <td>Afternoon Poster Session (<b>Posters 12-22!</b>) and Coffee Break</td>
+                        </tr>
+                        <tr class="success">
+                            <td>4:45</td>
+                            <td>5:45</td>
+                            <td>Xin Luna Dong, Ivan Titov, Maximillian Nickel, Luke Zettlemoyer, Sameer Singh, Tom Mitchell</td>
+                            <td>Speaker Panel</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>5:45</td>
+                            <td>6:00</td>
+                            <td>AKBC Organizers</td>
+                            <td>Best Poster Awards and Closing Remarks</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+	                <section id="papers">
+                <div class="page-header">
+                    <h1>Accepted Papers</h1>
+                </div>
+		<div class="paper">
+		  <span class="title">1. <a href="papers/1_paper.pdf">Multi-graph Affinity Embeddings for Multilingual Knowledge Graphs</a></span><br>
+		  <span class="authors"><span><a href="http://wis.cs.ucla.edu/wis/">Muhao Chen</a>, <a href="https://taozhou.wixsite.com/taozhou">Tao Zhou</a>, Pei Zhou and <a href="http://web.cs.ucla.edu/~zaniolo/">Carlo Zaniolo</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">2. <a href="https://arxiv.org/abs/1711.04204">Commonsense LocatedNear Relation Extraction</a></span><br>
+		  <span class="authors"><span>Frank F. Xu, <a href="https://yuchenlin.github.io/">Bill Y. Lin</a> and Kenny Zhu</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">3. <a href="https://arxiv.org/abs/1710.10881">Fast Linear Model for Knowledge Graph Embeddings</a></span><br>
+		  <span class="authors"><span>Armand Joulin, Edouard Grave, Piotr Bojanowski, Maximilian Nickel and Tomas Mikolov</span>. </span></div>
+		<div class="paper">
+		  <span class="title">4. <a href="papers/5_paper.pdf">Enforcing Output Constraints via SGD: A Step Towards Neural Lagrangian Relaxation</a></span><br>
+		  <span class="authors"><span>Jay-Yoon Lee, <a href="http://www.cs.umass.edu/~mwick">Michael Wick</a>, Jean-Baptiste Tristan and Jaime Carbonell</span>. </span></div>
+		<div class="paper">
+		  <span class="title">5. <a href="https://arxiv.org/abs/1710.08312">Attending to All Mention Pairs for Full Abstract Biological Relation Extraction</a></span><br>
+		  <span class="authors"><span>Patrick Verga, Emma Strubell, Ofer Shai and Andrew McCallum</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">6. <a href="https://arxiv.org/abs/1706.07179">RelNet: End-to-end Modeling of Entities &amp; Relations</a></span><br>
+		  <span class="authors"><span><a href="http://thetb.github.io">Trapit Bansal</a>, Arvind Neelakantan and Andrew McCallum</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">7. <a href="papers/10_paper.pdf">A Study of Automatically Acquiring Explanatory Inference Patterns from Corpora of Explanations: Lessons from Elementary Science Exams</a></span><br>
+		  <span class="authors"><a href="http://www.cognitiveai.org">Peter Jansen</a>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">8. <a href="https://arxiv.org/abs/1711.04438">Learning Abduction under Partial Observability</a></span><br>
+		  <span class="authors"><span>Zongyi Li, Brendan Juba and Evan Miller</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">9. <a href="papers/12_paper.pdf">Extending Knowledge Bases Using Images</a></span><br>
+		  <span class="authors"><span>Vincent Lonij, Ambrish Rawat and Maria-Irina Nicolae</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">10. <a href="https://arxiv.org/abs/1711.05186">False Positive and Cross-relation Signals in Distant Supervision Data</a></span><br>
+		  <span class="authors"><span><a href="https://ancadumitrache.github.io">Anca Dumitrache</a>, <a href="http://lora-aroyo.org">Lora Aroyo</a> and <a href="http://google.com/+Chris_Welty">Chris Welty</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">11. <a href="https://arxiv.org/abs/1711.05401">Revisiting Simple Neural Networks for Learning Representations of Knowledge Graphs</a></span><br>
+		  <span class="authors"><span>Srinivas Ravishankar, Chandrahas Dewangan and Partha Talukdar</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">12. <a href="papers/15_paper.pdf">Improving Distantly Supervised Relation Extraction using Word and Entity Based Attention</a></span><br>
+		  <span class="authors"><span><a href="http://sharmistha.co.in/">Sharmistha Jat</a>, Siddhesh Khandelwal and <a href="http://talukdar.net">Partha Talukdar</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">13. <a href="papers/16_paper.pdf">Couch potato or gym addict? Semantic lifestyle profiling with wearables and knowledge graphs</a></span><br>
+		  <span class="authors"><span><a href="http://www.about.me/NataliaDiazRodriguez">Natalia Díaz Rodríguez</a>, Aki Harma, Ignacio Huitzil, Fernando Bobillo, Umberto Straccia and Rim Helaoui</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">14. <a href="papers/17_paper.pdf">Contextual Pattern Embeddings for One-shot Relation Extraction</a></span><br>
+		  <span class="authors"><span>Abiola Obamuyide and Andreas Vlachos</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">15. <a href="papers/19_paper.pdf">Multimodal Attribute Extraction</a></span><br>
+		  <span class="authors"><span><a href="http://www.ics.uci.edu/~rlogan/">Robert L. Logan Iv</a>, Samuel Humeau and <a href="http://sameersingh.org">Sameer Singh</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">16. <a href="https://arxiv.org/abs/1711.05900">Using Noisy Extractions to Discover Causal Knowledge</a></span><br>
+		  <span class="authors"><span>Dhanya Sridhar, Jay Pujara and Lise Getoor</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">17. <a href="papers/21_paper.pdf">Learning to Organize Knowledge with N-Gram Machines</a></span><br>
+		  <span class="authors"><span><a href="http://cs.cmu.edu/~fanyang1">Fan Yang</a>, William W. Cohen, Jiazhong Nie, and Ni Lao</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">18. <a href="papers/22_paper.pdf">Finer Grained Entity Typing with TypeNet</a></span><br>
+		  <span class="authors"><span>Shikhar Murty, <a href="https://people.cs.umass.edu/~pat/">Patrick Verga</a>, <a href="https://people.cs.umass.edu/~luke/">Luke Vilnis</a> and <a href="https://people.cs.umass.edu/~mccallum/">Andrew McCallum</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">19. <a href="papers/24_paper.pdf">Go for a Walk and Arrive at the Answer: Reasoning Over Knowledge Bases with Reinforcement Learning</a></span><br>
+		  <span class="authors"><span><a href="http://rajarshd.github.io">Rajarshi Das</a>, <a href="http://people.cs.umass.edu/~sdhuliawala/">Shehzaad Dhuliawala</a>, <a href="http://manzil.ml">Manzil Zaheer</a>, <a href="http://people.cs.umass.edu/~luke/">Luke Vilnis</a>, Ishan Durugkar, Akshay Krishnaurthy, Alex Smola and <a href="https://people.cs.umass.edu/~mccallum/">Andrew McCallum</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">20. <a href="papers/26_paper.pdf">Embedding Multimodal Relational Data</a></span><br>
+		  <span class="authors"><span>Pouya Pezeshkpour, Liyan Chen and <a href="http://sameersingh.org">Sameer Singh</a></span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">21. <a href="papers/27_paper.pdf">Entity-centric Attribute Feedback for Interactive Knowledge Bases</a></span><br>
+		  <span class="authors"><span>Ari Kobren, Nicholas Monath and Andrew McCallum</span>. </span>
+		</div>
+		<div class="paper">
+		  <span class="title">22. <a href="papers/28_paper.pdf">Learning String Alignments for Entity Aliases</a></span><br>
+		  <span class="authors"><span><a href="http://www.aarontraylor.com">Aaron Traylor</a>, <a href="http://people.cs.umass.edu/~nmonath/">Nicholas Monath</a>, <a href="http://rajarshd.github.io/">Rajarshi Das</a> and <a href="https://people.cs.umass.edu/~mccallum/">Andrew McCallum</a></span>. </span>
+		</div>
+	    </section>
+	    
+            <section id="dates">
+                <div class="page-header">
+                    <h1>Dates</h1>
+                </div>
+                <ul>
+                <li> Submission Due: October 21, 2017
+                <li> Student Travel Award Application Due: October 22, 2017
+                <li> Notification: November 5, 2017
+                <li> Camera-ready Due: November 12, 2017
+                <li> Workshop: December 8,  2017
+                </ul>
+                <p>Deadlines are at <a href="http://www.worldtimebuddy.com/?qm=1&lid=2643743,5809844,1277333&h=2643743&date=2014-10-11&sln=7-8">11:59pm PDT</a>, and subject to change.</p>
+                <!--p> <a class="btn btn-primary" href="http://www.google.com/calendar/render?cid=https%3A%2F%2Fwww.google.com%2Fcalendar%2Ffeeds%2F89vttmib4nqa0rkr0trjd6a8ic%2540group.calendar.google.com%2Fpublic%2Fbasic" target="_blank">Google Calendar</a>
+                </p-->
+            </section>
+
+            <section id="organization">
+                <div class="page-header">
+                    <h1>Organization</h1>
+                </div>
+                <h2>Organizers</h2>
+                <ul>
+                   <li><a href="https://www.jaypujara.org/">Jay Pujara</a>, University of Southern California, USA </li>
+                   <li><a href="http://cs.stanford.edu/~danqi/">Danqi Chen</a>, Stanford University, USA </li>
+                   <li><a href="http://allenai.org/team/bhavanad/">Bhavana Dalvi</a>, Allen Institute for Artificial Intelligence, USA </li>
+                   <li><a href="http://rockt.github.com">Tim Rocktäschel</a>, University of Oxford, UK</li>
+                </ul>
+                For any questions, please e-mail <a href="mailto:info@akbc.ws">info@akbc.ws</a>.
+
+                <h2>Program Committee</h2>
+                <ul>
+                  <li> Alan Akbik
+                  <li> Alan Ritter
+                  <li> Andreas Vlachos
+                  <li> Anthony Platanios
+                  <li> Arun Chaganty
+                  <li> Arvind Neelakantan
+                  <li> Derry Wijaya
+                  <li> Doug Downey
+                  <li> Estevam Hruschka
+                  <li> Eunsol Choi
+                  <li> Fabian Suchanek
+                  <li> James Fan
+                  <li> Jayant Krishnamurthy
+	              <li> Johannes Welbl
+                  <li> Larysa Visengeriyeva
+                  <li> Luis Garraga
+                  <li> Matt Gardner
+                  <li> Nicoleta Preda
+                  <li> Niket Tandon
+                  <li> Niranjan Balasubramanian
+                  <li> Partha Talukdar
+				  <li> Pasquale Minervini
+                  <li> Pontus Stenetorp
+                  <li> Ralf Schenkel
+                  <li> Ramanathan Guha
+                  <li> Roman Klinger
+                  <li> Sebastian Krause
+                  <li> Siva Reddy
+                  <li> Steffen Staab
+                  <li> Stephen Bach
+                  <li> Victoria Lin
+                  <li> Xiang Ren
+                  <li> Xiao Ling
+                  <li> Yuhao Zhang
+                </ul>
+            </section>
+
+            <section id="previous">
+                <div class="page-header">
+                    <h1>Previous Workshops</h1>
+                </div>
+
+                <ul>
+                    <li><a href="http://akbc.ws/2016">AKBC 2016</a> at NAACL 2016, San Diego</li>
+                    <li><a href="http://akbc.ws/2014">AKBC 2014</a> at NIPS 2014, Montreal</li>
+                    <li><a href="http://akbc.ws/2013">AKBC 2013</a> at CIKM 2013, San Francisco</li>
+                    <li><a href="http://akbcwekex2012.wordpress.com/">AKBC-WEKEX 2012</a> at NAACL 2012, Montreal</li>
+                    <li><a href="http://videolectures.net/akbc2010_grenoble/">AKBC 2010</a> in Grenoble</li>
+                </ul>
+
+            </section>
+        </div>
+        <div class="span3">
+            <a class="twitter-timeline" href="https://twitter.com/search?q=%23AKBC2017%20OR%20akbc.ws" data-widget-id="532959371081154560">Tweets about #AKBC2017 OR akbc.ws</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>&copy; AKBC Organizers 2017</p>
+    </footer>
+
+</div>
+<!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    //this is needed to offset the scrollspy functionality,
+    //see http://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap
+    var offset = 60;
+
+    $(function() {
+        $('.navbar li a').click(function(event) {
+            var a = $(this)
+            var view = $(a.attr('href'))[0]
+            if (view) {
+                event.preventDefault();
+                view.scrollIntoView();
+                scrollBy(0, -offset);
+            }
+            $('.navbar li').removeClass("active")
+            a.parent().addClass("active")
+        });
+
+    })
+</script>
+
+
+
+
+</body>
+</html>
