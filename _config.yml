@@ -48,7 +48,7 @@ navigationLinks:
  - {permalink: "/#dates", text: "Dates"}
  - {permalink: "/#speakers", text: "Speakers"}
  - {permalink: "/workshops/", text: "Workshops"}
- - {permalink: "/#org", text: "Organization"}
+ - {permalink: "/org/", text: "Organization"}
  - {permalink: "/#prev", text: "Previous Workshops"}
 #  - {permalink: "/blog/", text: "Blog"}
 #  - {permalink: "/schedule/", text: "Schedule"}
