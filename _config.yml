@@ -8,7 +8,6 @@ markdown: kramdown
 permalink: pretty
 exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 
-
 # Site Settings
 title: "AKBC 2019"
 email: "info@akbc.ws"
@@ -42,13 +41,13 @@ c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
 
 # Navigation
 navigationLinks:
- - {permalink: "/", text: "Home"}
- - {permalink: "/#about", text: "About"}
- - {permalink: "/cfp/", text: "Call for Papers"}
- - {permalink: "/#dates", text: "Dates"}
- - {permalink: "/#speakers", text: "Speakers"}
- - {permalink: "/workshops/", text: "Workshops"}
- - {permalink: "/org/", text: "Organization"}
+ - {permalink: "/2019", text: "Home"}
+ - {permalink: "/2019/#about", text: "About"}
+ - {permalink: "/2019/cfp/", text: "Call for Papers"}
+ - {permalink: "/2019/#dates", text: "Dates"}
+ - {permalink: "/2019/#speakers", text: "Speakers"}
+ - {permalink: "/2019/workshops/", text: "Workshops"}
+ - {permalink: "/2019/org/", text: "Organization"}
  - {permalink: "/#prev", text: "Previous Workshops"}
 #  - {permalink: "/blog/", text: "Blog"}
 #  - {permalink: "/schedule/", text: "Schedule"}
