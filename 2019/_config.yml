@@ -1,5 +1,5 @@
 # Plugins
-gems:
+plugins:
 - jekyll-sitemap
 safe: false
 
@@ -8,12 +8,11 @@ markdown: kramdown
 permalink: pretty
 exclude: ['/automation/', 'README.md', 'LICENSE.txt', 'CNAME']
 
-
 # Site Settings
 title: "AKBC 2019"
 email: "info@akbc.ws"
 description: "1st Conference on Automated Knowledge Base Construction"
-baseurl: "/2019/_dev/zeppelin"
+baseurl: "/2019"
 url: "https://gdg-x.github.io"
 permalink: "/blog/:title"
 googleAnalyticsTrackingId: "UA-43643469-5"
@@ -44,11 +43,11 @@ c4sponsorsUrl: "/assets/GDG_DevFest_Partnership.pdf"
 navigationLinks:
  - {permalink: "/", text: "Home"}
  - {permalink: "/#about", text: "About"}
- - {permalink: "/#cfp", text: "Call for Papers"}
+ - {permalink: "/cfp/", text: "Call for Papers"}
  - {permalink: "/#dates", text: "Dates"}
  - {permalink: "/#speakers", text: "Speakers"}
- - {permalink: "/#workshops", text: "Workshops"}
- - {permalink: "/#org", text: "Organization"}
+ - {permalink: "/workshops/", text: "Workshops"}
+ - {permalink: "/org/", text: "Organization"}
  - {permalink: "/#prev", text: "Previous Workshops"}
 #  - {permalink: "/blog/", text: "Blog"}
 #  - {permalink: "/schedule/", text: "Schedule"}
@@ -201,9 +200,9 @@ footerBlocks:
 #   - {permalink: "/cod/", text: "Code of Conduct"}
 
 # Blog
-# blogTitle: "Latest news"
-# blogCommentsEnabled: true
-# discusShortName: "devfestua"
+blogTitle: "Latest news"
+blogCommentsEnabled: true
+discusShortName: "akbc-ws"
 
 # Speakers List Block
 # showSessions: true
