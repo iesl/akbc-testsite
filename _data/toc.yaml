@@ -1,29 +1,29 @@
 toc:
   - title: Call for Papers
-    url: /cfp
+    url: {{ site.baseurl }}/cfp
   - title: Program
     subpages:
       - page: Speakers
-        url: /speakers
+        url: {{ site.baseurl }}/speakers
       - page: Workshops
-        url: /workshops
+        url: {{ site.baseurl }}/workshops
       - page: Schedule
-        url: /schedule
+        url: {{ site.baseurl }}/schedule
       - page: Accepted Papers
         url: https://openreview.net/group?id=AKBC.ws/2019/Conference
   - title: Information for participants
     subpages:
       - page: Venue
-        url: /venue
+        url: {{ site.baseurl }}/venue
       - page: Visa information
-        url: /registration/#visa
+        url: {{ site.baseurl }}/registration/#visa
       - page: Travel
-        url: /travel
+        url: {{ site.baseurl }}/travel
   - title: Sponsors
-    url: /sponsors
+    url: {{ site.baseurl }}/sponsors
   - title: Dates
-    url: /#dates
+    url: {{ site.baseurl }}/#dates
   - title: Registration
-    url: /registration
+    url: {{ site.baseurl }}/registration
   - title: Organization
-    url: /organization
+    url: {{ site.baseurl }}/organization
