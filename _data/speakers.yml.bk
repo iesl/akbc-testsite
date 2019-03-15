@@ -1,0 +1,164 @@
+-
+  id: 1
+  name: "Waleed"
+  surname: "Ammar"
+  title: "AI2"
+  thumbnailUrl: VitaliyZasadnyy.jpg
+  speaker: true
+  #link: "https://allenai.org/team/waleeda/"
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "google-plus", link: "https://google.com/+VitalikZasadnyy"}
+    - {name: "twitter", link: "https://twitter.com/zasadnyy"}
+    - {name: "github", link: "https://github.com/zasadnyy"}
+    - {name: "site", link: "http://zasadnyy.com/"}
+-
+  id: 2
+  name: "Danqi"
+  surname: "Chen"
+  title: "Stanford, Princeton"
+  thumbnailUrl: OlehZasadnyy.jpg
+  speaker: true
+  #link: "https://cs.stanford.edu/~danqi/"
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "google-plus", link: "https://google.com/+OlehZasadnyy"}
+    - {name: "github", link: "https://github.com/ozasadnyy"}
+-
+  id: 3
+  name: "Yejin"
+  surname: "Choi"
+  title: "UW, AI2"
+  thumbnailUrl: OstapAndrusiv.jpg
+  speaker: true
+  #link: "https://homes.cs.washington.edu/~yejin/"
+  ribbon:
+    - {abbr: "GDG", title: "Google Developer Group"}
+  social:
+    - {name: "google-plus", link: "https://google.com/+OstapAndrusiv"}
+    - {name: "twitter", link: "https://twitter.com/p1f"}
+    - {name: "site", link: "http://andrusiv.com/"}
+-
+  id: 4
+  name: "Laura"
+  surname: "Dietz"
+  title: "UNH"
+  thumbnailUrl: DmytroDanylyk.jpg
+  speaker: true
+  #link: "http://www.cs.unh.edu/~dietz/"
+  social:
+    - {name: "google-plus", link: "https://plus.google.com/+DmytroDanylyk"}
+    - {name: "twitter", link: "https://twitter.com/dmytrodanylyk"}
+    - {name: "github", link: "https://github.com/dmytrodanylyk"}
+-
+  id: 5
+  name: "Lise"
+  surname: "Getoor"
+  title: "UCSC"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "https://getoor.soe.ucsc.edu/home"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 6
+  name: "Alexandra"
+  surname: "Meliou"
+  title: "UMass Amherst"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "https://people.cs.umass.edu/~ameli/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 7
+  name: "Ndapa"
+  surname: "Nakashole"
+  title: "UCSD"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "http://nakashole.com/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 8
+  name: "Fernando"
+  surname: "Pereira"
+  title: "Google"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "https://ai.google/research/people/author1092"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 9
+  name: "Hoifund"
+  surname: "Poon"
+  title: "MSR"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "https://www.microsoft.com/en-us/research/people/hoifung/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 10
+  name: "Chris"
+  surname: "Re"
+  title: "Stanford, Apple"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "https://cs.stanford.edu/people/chrismre/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 11
+  name: "Sebastian"
+  surname: "Riedel"
+  title: "UCL, Facebook"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "http://www.riedelcastro.org/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 12
+  name: "Guy"
+  surname: "Van den Broeck"
+  title: "UCLA"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "http://web.cs.ucla.edu/~guyvdb/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 13
+  name: "Claudia"
+  surname: "Wagner"
+  title: "Leibniz Institute for Social Sciences"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "http://www.claudiawagner.info/"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}
+-
+  id: 14
+  name: "Chris"
+  surname: "Welty"
+  title: "Google"
+  thumbnailUrl: ValentynShybanov.jpg
+  speaker: true
+  #link: "https://ai.google/research/people/104789"
+  social:
+    - {name: "google-plus", link: "https://google.com/+ValentynShybanov"}
+    - {name: "site", link: "http://olostan.name/"}

@@ -1,0 +1,27 @@
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+  <ul class="sidebar-nav">
+  
+  <br />
+
+   <a href="http://akbc.ws/2019/"><img src="/images/AKBC-Logo-w-text-OL.png" style="max-width: 200px;" class="center-block img-responsive"
+      alt="AKBC logo" /> </a>
+
+    <br />
+    <br />
+
+    {% for item in site.data.toc.toc %}
+      {% if item.subpages == null %}
+            <li> <b> <a href="{{ item.url }}">{{ item.title }}</a> </b> </li>
+      {% else %}
+        <li> <b> {{ item.title }} </b> </li>
+        <ul>
+          {% for entry in item.subpages %}
+            <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
+       <hr />
+    </ul>
+</div>
