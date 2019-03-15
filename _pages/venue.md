@@ -4,16 +4,37 @@ layout: page
 permalink: /venue
 ---
 
-      
-<img src="{{ site.baseurl }}/images/venue/chapel.jpg" alt="Old Chapel" style="width: 300px">
-
-**Old Chapel**
-
+<div class="row">
+<div class="col-md-6" markdown="1">
+<img class="center-block" src="{{ site.baseurl }}/images/venue/chapel.jpg"  alt="Old Chapel" style="width: 300px" />
+</div>
+<div class="col-md-6" markdown="1">
+<br /> <br /> <br />
+<b> Old Chapel</b>
+<br />
 University of Massachusetts Amherst <br>
 144 Hicks Way <br>
 Amherst Massachusetts 01003 <br>
 [https://www.umass.edu/oldchapel/](https://www.umass.edu/oldchapel/)
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+  <div class="span4"></div>
  
+  <div class="span4"></div>
+
+</div>
+</div>
+<div class="container">
+<div class="row">
+  <div class="span4"></div>
+  
+  <div class="span4"></div>
+
+</div>
+</div>
 
 <figure style="display:inline-block;">
   <img style="display:inline" src="{{ site.baseurl }}/images/venue/15-0192_mg_1891.jpg" alt="Old Chapel" style="width: 300px">
@@ -31,47 +52,33 @@ Amherst Massachusetts 01003 <br>
   <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4603.jpg" alt="Old Chapel" style="width: 300px">
 </figure>
 
- 
-</div>
+<br /> 
 
 ### Local Attractions
 
-<figure style="display:inline-block;">
-<a href="https://www.alltrails.com/us/massachusetts/amherst">
-<img src="{{ site.baseurl }}/images/activities/hiking.jpg" alt="Hiking" width=200>
-</a>
-<figcaption><b><a href="https://www.alltrails.com/us/massachusetts/amherst">Hiking and Outdoors</a>  </figcaption>
-</figure>
+<div id="attraction_images">
+  <figure4>
+      <img src="{{ site.baseurl }}/images/activities/hiking.jpg" alt="Hiking" width="150" height="150">
+      <figcaption><br /><a href="https://www.alltrails.com/us/massachusetts/amherst">Hiking and Outdoors</a></figcaption>
+  </figure4>
 
-<figure style="display:inline-block;">
-<a href="https://www.gonomad.com/71165-eat-pioneer-valley-massachusetts">
-<img src="{{ site.baseurl }}/img/activities/dining.png" alt="Dining" width=200>
-</a>
-<figcaption><b><a href="https://www.gonomad.com/71165-eat-pioneer-valley-massachusetts">Dining</a>  </figcaption>
-</figure>
-<figure style="display:inline-block;">
-<a href="https://www.emilydickinsonmuseum.org/">
-<img src="{{ site.baseurl }}/img/activities/emily_dickinson.png" alt="Emily Dickinson" width=200>
-</a>
-<figcaption><b><a href="https://www.emilydickinsonmuseum.org/">Emily Dickinson Musuem</a>  </figcaption>
+  <figure4>
+      <img src="{{ site.baseurl }}/images/activities/dining.png" alt="Dining" width="150" height="150">
+      <figcaption><a href="https://www.gonomad.com/71165-eat-pioneer-valley-massachusetts">Dining</a></figcaption>                    
+  </figure4>
 
-</figure>
-<figure style="display:inline-block;">
-<a href="https://www.carlemuseum.org/">
-<img src="{{ site.baseurl }}/img/activities/eric_carle.png" alt="Eric Carle" width=200>
-</a>
-<figcaption><b><a href="https://www.carlemuseum.org/">Eric Carle Musuem</a>  </figcaption>
-</figure>
-<br>
-<br>
-<br>
-<br>
+  <figure4>
+      <img src="{{ site.baseurl }}/images/activities/emily_dickinson.png" alt="Emily Dickinson" width="150" height="150">
+      <figcaption><a href="https://www.emilydickinsonmuseum.org/">Emily Dickinson Musuem</a> </figcaption>
+  </figure4>
 
+  <figure4>
+      <img src="{{ site.baseurl }}/images/activities/eric_carle.png" alt="Eric Carle" width="150" height="150">
+      <figcaption><a href="https://www.carlemuseum.org/">Eric Carle Musuem</a></figcaption>               
+  </figure4>
 
-      <br>
-    </div>
-    </div>
   </div>
-</section>
+
+
 
 
