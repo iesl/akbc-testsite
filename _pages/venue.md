@@ -19,40 +19,47 @@ Amherst Massachusetts 01003 <br>
 </div>
 </div>
 
-<div class="container">
-<div class="row">
-  <div class="span4"></div>
- 
-  <div class="span4"></div>
+<br /> <br /> <br />
 
-</div>
-</div>
-<div class="container">
-<div class="row">
-  <div class="span4"></div>
-  
-  <div class="span4"></div>
-
-</div>
-</div>
-
-<figure style="display:inline-block;">
+<div id="chapel_photos">
+<figure3 style="display:inline-block;">
   <img style="display:inline" src="{{ site.baseurl }}/images/venue/15-0192_mg_1891.jpg" alt="Old Chapel" style="width: 300px">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2015_fall_campus_mkt_mg_9275.jpg" alt="Old Chapel" style="width: 300px">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/11_018_078.jpg" alt="Old Chapel" style="width: 300px">
-</figure>
-<figure style="display:inline-block;">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_architecture_class_js_mg_8503.jpg" alt="Old Chapel" style="width: 300px">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4547.jpg" alt="Old Chapel" style="width: 300px">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_architecture_class_js_mg_8542.jpg" alt="Old Chapel" style="width: 300px">
-</figure>
-<figure style="display:inline-block;">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4583.jpg" alt="Old Chapel" style="width: 300px">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4523.jpg" alt="Old Chapel" style="width: 300px">
-  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4603.jpg" alt="Old Chapel" style="width: 300px">
-</figure>
+</figure3>
 
-<br /> 
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2015_fall_campus_mkt_mg_9275.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/11_018_078.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_architecture_class_js_mg_8503.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4547.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_architecture_class_js_mg_8542.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4583.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4523.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+
+<figure3 style="display:inline-block;">
+  <img style="display:inline" src="{{ site.baseurl }}/images/venue/2016_chapel_js_mg_4603.jpg" alt="Old Chapel" style="width: 300px">
+</figure3>
+</div>
+
+<br /> <br /> 
 
 ### Local Attractions
 

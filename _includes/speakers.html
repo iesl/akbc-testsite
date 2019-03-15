@@ -2,10 +2,10 @@
   <!-- add extra container element for Masonry -->
   <div class="grid">
     <!-- add sizing element for columnWidth -->
-    <div class="grid-sizer col-xs-4"></div>
+    <!--div class="grid-sizer col-xs-4"></div-->
     <!-- items use Bootstrap .col- classes -->
       {% for speaker in site.data.speakers %} 
-      <div class="grid-item col-xs-4">
+      <div class="grid-item col-md-4">
         <div class="grid-item-content">
         {% include speakerbox.html %} 
         </div>
