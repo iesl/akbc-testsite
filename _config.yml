@@ -8,8 +8,3 @@ email: "info@akbc.ws"
 include: ["_pages"]
 
 markdown: kramdown
-
-# Plugins
-gems:
-- jekyll-sitemap
-safe: false

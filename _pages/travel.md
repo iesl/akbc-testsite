@@ -38,6 +38,8 @@ Located in scenic Western Massachusetts, Amherst is conveniently accessible by a
 </div>
 
 
+<br>
+<br>
 
 #### By Train
 
@@ -53,6 +55,9 @@ Located in scenic Western Massachusetts, Amherst is conveniently accessible by a
 </div>
 </div>
 
+
+<br>
+<br>
 
 #### Places to Stay
 
@@ -78,6 +83,14 @@ Inn on Boltwood</a> </b> <br> The Inn on Boltwood is a historic hotel <br>  loca
 </div>
 </div>
 
+<br>
+<br>
+
+<div class="row">
+<div class="col-md-4">
+	<br>
+</div>
+<div class="col-md-4" markdown="1">
 #### Other hotels
 
 * [The Black Walnut Inn](http://www.blackwalnutinn.com/)
@@ -85,3 +98,4 @@ Inn on Boltwood</a> </b> <br> The Inn on Boltwood is a historic hotel <br>  loca
 * [The Hotel Northampton](http://www.hotelnorthampton.com/)
 * [Courtyard by Marriott Hadley Amherst](https://www.marriott.com/hotels/travel/bdlhd-courtyard-hadley-amherst/)
 * [Holiday Inn Express](https://www.ihg.com/holidayinnexpress/hotels/us/en/hadley/hdlma/hoteldetail)
+</div>
