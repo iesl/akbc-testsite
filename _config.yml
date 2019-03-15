@@ -1,6 +1,6 @@
 name: AKBC 2019
 author: AKBC
-baseurl: ""
+baseurl: "akbc-testsite/"
 description: "1st Conference on Automated Knowledge Base Construction"
 email: "info@akbc.ws"
 
