@@ -1,0 +1,15 @@
+name: AKBC 2019
+author: AKBC
+baseurl: ""
+description: "1st Conference on Automated Knowledge Base Construction"
+email: "info@akbc.ws"
+
+
+include: ["_pages"]
+
+markdown: kramdown
+
+# Plugins
+gems:
+- jekyll-sitemap
+safe: false

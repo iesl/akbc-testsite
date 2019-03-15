@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>AKBC 2016</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webpage for the AKBC 2016 Workshop at NAACL">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 0px;
+        }
+        section {
+            /* hack to deal with scroll offsets
+            //padding-top: 60px;
+            //margin-top: -60px; */
+        }
+        .social {
+            font-size: 1px;
+        }
+
+        .paper {
+            display: list-item;
+            margin-left: 30px;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-weight: bold;
+            display:inline-table;
+        }
+
+        .authors {
+        }
+
+        .schedule {
+            width: 100%;
+        }
+    </style>
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-40372412-1', 'akbc.ws');
+        ga('send', 'pageview');
+
+    </script>
+</head>
+
+<!--<body data-spy="scroll" data-target=".navbar">-->
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="brand", href="index.html">AKBC 2016</a>
+
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <!--<li class="active"><a href="#">Home</a></li>-->
+                    <!--li><a href="#intro">Introduction</a></li-->
+                    <li class="active"><a href="cfp.html">Call for Papers</a>/li>
+                    <li><a href="index.html#speakers">Speakers</a></li>
+                    <li><a href="index.html#dates">Dates</a></li>
+                    <!--li><a href="#schedule">Schedule</a></li-->
+                    <!--li><a href="#accepted">Papers</a></li-->
+                    <!--li><a href="#submission">Submission</a></li-->
+                    <li><a href="index.html#organization">Organization</a></li>
+                    <!--li><a href="#submission">Camera-ready Instructions</a></li-->
+                    <li><a href="index.html#previous">Previous Workshops</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+</div>
+
+<div class="container">
+
+ <div class="hero-unit">
+        <h1>AKBC 2016</h1>
+
+        <p>5th Workshop on Automated Knowledge Base Construction (AKBC) 2016</p>
+        <p>at
+            <a href="http://naacl.org/naacl-hlt-2016/">NAACL 2016</a> in San Diego, California, June 17, 2016.
+        </p>
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    </div>
+
+    <div class="row">
+        <div class="span9">
+            <section id="cfp">
+                <div class="page-header">
+                    <h1>Call for Papers</h1>
+                </div>
+
+
+                <p>We welcome papers documenting previously unpublished research; ongoing and exciting preliminary work is perfectly fine. We are particularly interested in visionary paper submissions. We aim for papers that express intriguing and promising ideas &mdash; focusing less on where science is today and more on where it should go tomorrow. </p>
+
+                <p>Topics of interest include, but are not limited to:
+                <ul>
+                <li> machine learning on text; unsupervised, lightly-supervised and distantly-supervised learning; learning from naturally-available data
+                <li> human-computer collaboration in knowledge base construction; automated population of wikis
+                <li> inference for graphical models and structured prediction; scalable approximate inference
+                <li> information extraction; open information extraction, named entity extraction; ontology construction
+                <li> entity resolution, relation extraction, information integration; schema alignment; ontology alignment; monolingual alignment, alignment between knowledge bases and text
+                <li> pattern analysis, semantic analysis of natural language, reading the web, learning by reading
+                <li> databases; distributed information systems; probabilistic databases
+                <li> scalable computation; distributed computation
+                <li> queries on mixtures of structured and unstructured data; querying under uncertainty
+                <li> dynamic data, online/on-the-fly adaptation of knowledge
+                <li> languages, toolkits and systems for automated knowledge base construction
+                <li> demonstrations of existing automatically-built knowledge bases
+                </ul>
+                </p>
+                <br>
+            </section>
+
+            <section id="submission">
+                <h2>Submission</h2>
+                <p>Please format your papers using the standard NAACL style files, and restrict it to 4 pages (excluding references). Since the reviewing will not be double-blind, please include author information. All accepted papers will be presented as posters, with exceptional submissions also presented as oral talks.
+
+                <ul>
+                <li>Style files: <a href="http://naacl.org/naacl-pubs/">http://naacl.org/naacl-pubs/</a>
+                <li>Submission site: <a href="https://www.softconf.com/naacl2016/AKBC2016/">https://www.softconf.com/naacl2016/AKBC2016/</a>
+                </li>
+                </p>
+                <br>
+            </section>
+
+            <section id="dates">
+                    <h2>Important Dates</h2>
+                <ul>
+                <li> Submission Due: March 25, 2016
+                <li> Notification: April 1, 2016
+                <li> Camera-ready Due: April 8, 2016
+                <li> Workshop: June 17, 2016
+                </ul>
+                Deadlines are at 11:59pm PDT and subject to change.
+                </p>
+            </section>
+ 
+            <section id="speakers">
+                <div class="page-header">
+                    <h1>Invited Speakers</h1>
+                </div>
+                <table class="table table-hover">
+                    <!-- <tr>
+                    <td><a href="https://www.cs.ox.ac.uk/people/phil.blunsom/">Phil Blunsom</a></td>
+                    <td>Google DeepMind / University of Oxford</td>
+                    </tr>
+                    <tr> -->
+                    <td><a href="https://research.facebook.com/antoine-bordes">Antoine Bordes</a></td>
+                    <td>Facebook Artificial Intelligence Research</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.cs.cmu.edu/~wcohen/">William Cohen</a></td>
+                    <td>Carnegie Mellon University</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://www.cs.jhu.edu/~vandurme/">Benjamin Van Durme</a></td>
+                    <td>Johns Hopkins University</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://oren-etzioni.people.allenai.org/">Oren Etzioni</a></td>
+                    <td>Allen Institute for Artificial Intelligence</td>
+                    </tr>
+                    <tr>
+                    <td><a href="http://cs.stanford.edu/~pliang/">Percy Liang</a></td>
+                    <td>Stanford University</td>
+                    </tr>
+                    <tr>
+                    <tr>
+                    <td><a href="http://nlp.stanford.edu/manning/">Chris Manning</a></td>
+                    <td>Stanford University</td>
+                    </tr>
+                    <tr>
+                    <td><a href="https://people.cs.umass.edu/~mccallum/">Andrew McCallum</a></td>
+                    <td>University of Massachusetts Amherst</td>
+                    </tr>
+<!--                     <tr>
+                    <td><a href="http://www.riedelcastro.org">Sebastian Riedel</a></td>
+                    <td>University College London</td>
+                    </tr> -->
+                    <td><a href="http://research.microsoft.com/en-us/people/kristout/">Kristina Toutanova</a></td>
+                    <td>Microsoft Research</td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section id="organization">
+                <div class="page-header">
+                    <h1>Organization</h1>
+                </div>
+
+                <ul>
+                   <li><a href="https://cs.umd.edu/~jay/">Jay Pujara</a>, University of Maryland, USA
+                    </li>
+                   <li><a href="http://rockt.github.com">Tim Rocktaschel</a>, University College London, UK</li>
+                   <li><a href="http://cs.stanford.edu/~danqi/">Danqi Chen</a>, Stanford University, USA</li>
+                   <li><a href="http://www.sameersingh.org">Sameer Singh</a>, University of Washington, USA </li>
+                </ul>
+                For any questions, please mail <a href="mailto:info@akbc.ws">info@akbc.ws</a>
+            </section>
+        </div>
+    </div>
+ 
+    <hr>
+
+    <footer>
+        <p>&copy; AKBC Organizers 2016</p>
+    </footer>
+
+</div>
+<!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script>
+    //this is needed to offset the scrollspy functionality,
+    //see http://stackoverflow.com/questions/9288482/how-do-i-set-the-offset-for-scrollspy-in-bootstrap
+    var offset = 60;
+
+    $(function() {
+        $('.navbar li a').click(function(event) {
+            var a = $(this)
+            var view = $(a.attr('href'))[0]
+            if (view) {
+                event.preventDefault();
+                view.scrollIntoView();
+                scrollBy(0, -offset);
+            }
+            $('.navbar li').removeClass("active")
+            a.parent().addClass("active")
+        });
+
+    })
+
+
+</script>
+
+
+
+
+</body>
+</html>
